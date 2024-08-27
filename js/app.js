@@ -2,7 +2,7 @@
 const cursosLista = document.getElementById('cursos-lista');
 
 // Fetch para obtener los cursos desde la API del backend
-fetch('http://localhost:3000/cursos')
+fetch('https://back-two-snowy.vercel.app/cursos')
   .then(response => response.json())
   .then(cursos => {
     cursos.forEach(curso => {
