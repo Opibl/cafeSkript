@@ -7,12 +7,21 @@
     "express-rate-limit": "^7.4.0",
     "express-validator": "^7.2.0",
     "firebase": "^10.13.0",
+    "firebase-admin": "^12.4.0",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.14",
     "serverless-http": "^3.2.0"
   },
   "scripts": {
-    "start": "node js/contacto-back.js",
+    "start": "node back.js",
     "build": "netlify deploy --prod"
-  }
+  },
+  "name": "blogdecafe_fin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
