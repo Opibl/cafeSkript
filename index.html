@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogDeCafé</title>
+    <meta name="description" content="Página web de blog de café">
+
+    <!-- Preload y Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas y consejos</p>
+        </div>
+    </header>
+
+    <main class="contenedor contenido-principal">
+        <section class="blog">
+            <h3>Nuestro Blog</h3>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="imagen blog">
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Tipos de Grano de Café</h4>
+                    <p>Existen varios tipos de granos de café, y cada uno tiene sus propias características en términos de sabor, aroma y cultivo.</p>
+                    <ul>
+                        <li><strong>Café Arábica (Coffea arabica):</strong> Sabor suave, con notas afrutadas y acidez brillante.</li>
+                        <li><strong>Café Robusta (Coffea canephora):</strong> Sabor fuerte, con un perfil terroso y amargo.</li>
+                        <li><strong>Café Liberica (Coffea liberica):</strong> Sabor afrutado y floral.</li>
+                        <li><strong>Café Excelsa (Coffea excelsa):</strong> Sabor afrutado y ácido.</li>
+                    </ul>
+                    <p>Cada tipo de grano tiene su propio perfil de sabor y aroma, lo que lo hace adecuado para diferentes métodos de preparación.</p>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="imagen blog">
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">3 Deliciosas Recetas de Café</h4>
+                    <ul>
+                        <li><strong>Café con Leche (Café au Lait):</strong> Mezcla de café fuerte y leche caliente con azúcar al gusto.</li>
+                        <li><strong>Café Helado con Vainilla:</strong> Café frío con jarabe de vainilla, hielo y crema batida opcional.</li>
+                        <li><strong>Café Mocha:</strong> Mezcla de café caliente, cacao en polvo, azúcar y leche, decorado con crema batida y virutas de chocolate.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="entrada">
+                <div class="entrada__imagen">
+                    <picture>
+                        <source loading="lazy" srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="imagen blog">
+                    </picture>
+                </div>
+
+                <div class="entrada__contenido">
+                    <h4 class="no-margin">Beneficios del Café</h4>
+                    <ul>
+                        <li><strong>Mejora la Energía y el Rendimiento Mental:</strong> La cafeína aumenta la alerta y mejora el rendimiento cognitivo.</li>
+                        <li><strong>Propiedades Antioxidantes:</strong> Rico en antioxidantes que combaten el daño celular.</li>
+                        <li><strong>Aumenta el Metabolismo:</strong> La cafeína mejora la quema de grasas.</li>
+                        <li><strong>Protección contra Enfermedades:</strong> Menor riesgo de enfermedades como el Parkinson y la diabetes tipo 2.</li>
+                        <li><strong>Mejora la Salud del Hígado:</strong> Puede reducir el riesgo de cirrosis y enfermedades hepáticas.</li>
+                        <li><strong>Beneficios Cardiovasculares:</strong> Consumo moderado asociado a menor riesgo de enfermedades cardíacas.</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <aside class="sidebar">
+            <h3>Nuestros Cursos y Talleres</h3>
+            <ul id="cursos-lista" class="cursos no-padding">
+                <!-- Cursos dinámicos cargados desde Firebase -->
+            </ul>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafé</span></h1>
+                </a>
+
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/modernizr.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore-compat.js"></script>
+    <script src="js/config.js" defer></script>
+    <script src="js/indexServer.js"></script>
+</body>
+
+</html>
