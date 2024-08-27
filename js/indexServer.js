@@ -1,13 +1,14 @@
 
 // Configuración de Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyCnwLPYzeUL_wgx1sft070WqmnwJAC4Mtw",
-    authDomain: "prueba-fe864.firebaseapp.com",
-    projectId: "prueba-fe864",
-    storageBucket: "prueba-fe864.appspot.com",
-    messagingSenderId: "204064540629",
-    appId: "1:204064540629:web:840733973bfe232fcb5f5c"
+    apiKey: "you",
+    authDomain: "you",
+    projectId: "you",
+    storageBucket: "you",
+    messagingSenderId: "you",
+    appId: "you"
   };
+  
   
   
   
