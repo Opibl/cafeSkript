@@ -60,7 +60,7 @@ img {
 
 /** Header **/
 .webp .header {
-    background-image: url(../img/banner.webp);
+    background-image: url(../img/banner.jpg);
 }
 .no-webp .header {
     background-image: url(../img/banner.jpg);
